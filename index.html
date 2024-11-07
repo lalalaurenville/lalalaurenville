@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lalalaurenville Sites</title>
+
+  <!-- Google Fonts for a modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    .social-button {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: background-color 0.3s;
+    }
+    .social-button-instagram {
+      background-color: #333;
+      color: #fff;
+      padding: 17px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: background-color 0.3s;
+    }
+    .social-button-tiktok {
+      background-color: #333;
+      color: #fff;
+      padding: 17px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: background-color 0.3s;
+    }
+    .social-button-youtube {
+      background-color: #333;
+      color: #fff;
+      padding: 19px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: background-color 0.3s;
+    }
+    .social-button-amazon {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .social-button:hover {
+      background-color: #ff4500;
+    }
+    .social-button-youtube:hover {
+      background-color: #ff0000;
+    }
+    .social-button-instagram:hover {
+      background-color: #E4405F;
+    }
+    .social-button-tiktok:hover {
+      background-color: #00f2ea;
+    }
+    .social-button-amazon:hover {
+      background-color: #000000;
+    }
+
+
+    .social-button i {
+      font-size: 1.5em;
+    }
+     .social-button-instagram i {
+      font-size: 1.5em;
+    }
+     .social-button-tiktok i {
+      font-size: 1.5em;
+    }
+     .social-button-instagram i {
+      font-size: 1.5em;
+    }
+     .social-button-amazon i {
+      font-size: 1.5em;
+    }
+
+    .email-button {
+      background-color: #444;
+      color: #fff;
+      padding: 15px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 30px;
+      transition: background-color 0.3s;
+    }
+
+    .email-button:hover {
+      background-color: #ff4500;
+    }
+
+    .email-button i {
+      font-size: 1.5em;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.1em;
+      }
+
+      .social-button {
+        font-size: 1em;
+        padding: 12px;
+      }
+      .social-button-instagram {
+        font-size: 1em;
+        padding: 12px;
+      }
+      .social-button-youtube {
+        font-size: 1em;
+        padding: 12px;
+      }
+      .social-button-tiktok {
+        font-size: 1em;
+        padding: 12px;
+      }
+      .social-button-amazon {
+        font-size: 1em;
+        padding: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .social-button {
+        font-size: 0.9em;
+        padding: 10px;
+      }
+       .social-button-instagram {
+        font-size: 0.9em;
+        padding: 10px;
+      }
+       .social-button-tiktok {
+        font-size: 0.9em;
+        padding: 10px;
+      }
+       .social-button-youtube {
+        font-size: 0.9em;
+        padding: 10px;
+      }
+       .social-button-amazon {
+        font-size: 0.9em;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="images/purplefullstroke.png" width="70%" height="70%">
+    <p>Actress & Content Creator </p>
+    <div class="social-links">
+      <a href="https://youtube.com/@lalalaurenville" target="_blank">
+        <button class="social-button-youtube"> Subscribe!
+          <i class="fab fa-youtube"></i> 
+        </button>
+      </a>
+
+      <a href="https://tiktok.com/@lalalaurenville" target="_blank">
+        <button class="social-button-tiktok">
+          <i class="fab fa-tiktok"></i> 
+        </button>
+      </a>
+
+      <a href="https://instagram.com/lalalaurenville" target="_blank">
+        <button class="social-button-instagram">
+          <i class="fab fa-instagram"></i> 
+        </button>
+      </a>
+      <a href="https://amazon.com/shop/lalalaurenville" target="_blank">
+        <button class="social-button-amazon">
+          <i class="fab fa-amazon"></i> Amazon Storefront
+        </button>
+      </a>
+
+
+    <a href="mailto:bookingsforlauren@gmail.com">
+      <button class="social-button">
+        <i class="fas fa-envelope"></i> Bookings Only
+      </button>
+    </a>
+      </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=wCTLxw3yuo3Brv_H&amp;list=PL8_WRG8RUyeo9z8fOp8ewY5sBVXXURDQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+   
+   
+  <!-- Optional: JS to ensure mobile responsiveness or interactivity if needed -->
+  <script>
+    // You can add JS here for more interactivity (e.g. animations, form submissions, etc.)
+  </script>
+
+</body>
+</html>
+
